@@ -11,7 +11,7 @@
   </head>
   <body>
     <header>
-      <nav class="animate__animated">
+      <nav class="animate__animated all-pages">
         <div class="top-line-nav d-flex">
           <div class="search">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
@@ -19,16 +19,18 @@
             </svg>
           </div>
           <div class="logo-nav">
-            <a href="/Avion/index.html">Avion</a>
+            <a href="/avion/index.html">Avion</a>
           </div>
           <div class="basket-and-user-container dis-flex">
             <div class="basket">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <a href="/avion/cart.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                 <rect width="16" height="16" fill="white" style="mix-blend-mode:multiply"/>
                 <path d="M5 15C5.55228 15 6 14.5523 6 14C6 13.4477 5.55228 13 5 13C4.44772 13 4 13.4477 4 14C4 14.5523 4.44772 15 5 15Z" fill="#2A254B"/>
                 <path d="M12 15C12.5523 15 13 14.5523 13 14C13 13.4477 12.5523 13 12 13C11.4477 13 11 13.4477 11 14C11 14.5523 11.4477 15 12 15Z" fill="#2A254B"/>
                 <path d="M14 3.50001H2.91L2.5 1.40001C2.47662 1.28537 2.41379 1.18256 2.32243 1.10947C2.23107 1.03639 2.11697 0.997651 2 1.00001H0V2.00001H1.59L3.5 11.6C3.52338 11.7146 3.58621 11.8175 3.67757 11.8905C3.76893 11.9636 3.88303 12.0024 4 12H13V11H4.41L4 9.00001H13C13.1156 9.00284 13.2286 8.96552 13.3197 8.89441C13.4109 8.8233 13.4746 8.7228 13.5 8.61001L14.5 4.11001C14.5168 4.03582 14.5164 3.95879 14.4989 3.88478C14.4814 3.81076 14.4472 3.74172 14.399 3.6829C14.3508 3.62407 14.2898 3.57703 14.2206 3.54534C14.1515 3.51364 14.076 3.49814 14 3.50001ZM12.6 8.00001H3.81L3.11 4.50001H13.375L12.6 8.00001Z" fill="#2A254B"/>
               </svg>
+              </a>
             </div>
             <div class="user">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
@@ -49,20 +51,532 @@
         </div>
         <div class="bottom-line-nav">
           <ul class="links-list d-flex">
-            <li class="link-item"><a href="/Avion/product-listing.html">Plant pots</a></li>
-            <li class="link-item"><a href="/Avion/product-listing.html">Ceramics</a></li>
-            <li class="link-item"><a href="/Avion/product-listing.html">Tables</a></li>
-            <li class="link-item"><a href="/Avion/product-listing.html">Chairs</a></li>
-            <li class="link-item"><a href="/Avion/product-listing.html">Crockery</a></li>
-            <li class="link-item"><a href="/Avion/product-listing.html">Tableware</a></li>
-            <li class="link-item"><a href="/Avion/product-listing.html">Cutlery</a></li>
+            <li class="link-item"><a href="product-listing.html">Plant pots</a></li>
+            <li class="link-item"><a href="product-listing.html">Ceramics</a></li>
+            <li class="link-item"><a href="product-listing.html">Tables</a></li>
+            <li class="link-item"><a href="product-listing.html">Chairs</a></li>
+            <li class="link-item"><a href="product-listing.html">Crockery</a></li>
+            <li class="link-item"><a href="product-listing.html">Tableware</a></li>
+            <li class="link-item"><a href="product-listing.html">Cutlery</a></li>
           </ul>
         </div>
       </nav>
-      
+      <div class="header-product-listing-block">
+        <div class="product-list-header-heading">All products</div>
+      </div>
     </header>
+    <div class="filter-sorting-buttons">
+      <button class="filter-sorting-button" id="showFiltersBtn">
+        <span>Filters</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+          <rect width="16" height="16" fill="white" style="mix-blend-mode:multiply"/>
+          <path d="M12 6L8 11L4 6H12Z" fill="#2A254B"/>
+        </svg>
+        <ion-icon name="caret-up-outline"></ion-icon>
+      </button>
+      <button class="filter-sorting-button" id="showSortingBtn">
+        <span>Sorting</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+          <rect width="16" height="16" fill="white" style="mix-blend-mode:multiply"/>
+          <path d="M12 6L8 11L4 6H12Z" fill="#2A254B"/>
+        </svg>
+        <ion-icon name="caret-up-outline"></ion-icon>
+      </button>
+    </div>
+    <div class="filter-sorting-container dis-flex">
+      <div class="filters-container dis-flex">
+        <div class="dropdown">
+          <button class="dropbtn">
+            <span>Category</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <rect width="16" height="16" fill="white" style="mix-blend-mode:multiply"/>
+                <path d="M12 6L8 11L4 6H12Z" fill="#2A254B"/>
+            </svg>
+            <ion-icon name="caret-up-outline"></ion-icon>
+          </button>
+          <div class="dropdown-content">
+            <form action="#" id="Category">
+              <div class="dropdown-item">
+                <input type="checkbox" id="PlantsPots" data-category="Plant-pots" value="Plant pots">
+                <label for="Plant pots"> Plant pots</label>
+              </div>
+              <div class="dropdown-item">
+                <input type="checkbox" id="Ceramics" data-category="Ceramics" value="Ceramics">
+                <label for="Ceramics"> Ceramics</label>
+              </div>
+              <div class="dropdown-item">
+                <input type="checkbox" id="Tables" data-category="Tables" value="Tables">
+                <label for="Tables"> Tables</label>
+              </div>
+              <div class="dropdown-item">
+                <input type="checkbox" id="Chairs" data-category="Chairs" value="Chairs">
+                <label for="Chairs"> Chairs</label>
+              </div>
+              <div class="dropdown-item">
+                <input type="checkbox" id="Crockery" data-category="Crockery" value="Crockery">
+                <label for="Crockery"> Crockery</label>
+              </div>
+              <div class="dropdown-item">
+                <input type="checkbox" id="Tableware" data-category="Tableware" value="Tableware">
+                <label for="Tableware"> Tableware</label>
+              </div>
+              <div class="dropdown-item">
+                <input type="checkbox" id="Cutlery" data-category="Cutlery" value="Cutlery">
+                <label for="Cutlery"> Cutlery</label>
+              </div>
+              <button type="submit" class="dropdown-submit">Show</button>
+            </form>
+            
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">
+            <span>Product type</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <rect width="16" height="16" fill="white" style="mix-blend-mode:multiply"/>
+                <path d="M12 6L8 11L4 6H12Z" fill="#2A254B"/>
+            </svg>
+            <ion-icon name="caret-up-outline"></ion-icon>
+          </button>
+          <div class="dropdown-content" >
+            <form action="#" id="ProductType">
+              <div class="dropdown-item">
+                <input type="checkbox" id="Furniture" data-producttype="Furniture" value="Furniture">
+                <label for="Furniture"> Furniture</label>
+              </div>
+              <div class="dropdown-item">
+                <input type="checkbox" id="Homeware" data-producttype="Homeware" value="Homeware">
+                <label for="Homeware"> Homeware</label>
+              </div>
+              <div class="dropdown-item">
+                <input type="checkbox" id="Sofas" data-producttype="Sofas" value="Sofas">
+                <label for="Sofas"> Sofas</label>
+              </div>
+              <div class="dropdown-item">
+                <input type="checkbox" id="LightFittings" data-producttype="Light-fittings" value="Light fittings">
+                <label for="Light fittings"> Light fittings</label>
+              </div>
+              <div class="dropdown-item">
+                <input type="checkbox" id="Accessories" data-producttype="Accessories" value="Accessories">
+                <label for="Accessories"> Accessories</label>
+              </div>
+              <button type="submit" class="dropdown-submit">Show</button>
+            </form>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">
+            <span>Price</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <rect width="16" height="16" fill="white" style="mix-blend-mode:multiply"/>
+                <path d="M12 6L8 11L4 6H12Z" fill="#2A254B"/>
+            </svg>
+            <ion-icon name="caret-up-outline"></ion-icon>
+          </button>
+          <div class="dropdown-content" >
+            <form action="#" id="Price">
+              <div class="dropdown-item">
+                <input type="checkbox" id="0-100" data-price="0 - 100" value="0 - 100">
+                <label for="0 - 100"> 0 - 100</label>
+              </div>
+              <div class="dropdown-item">
+                <input type="checkbox" id="101-250" data-price="101 - 250" value="101 - 250">
+                <label for="101 - 250"> 101 - 250</label>
+              </div>
+              <div class="dropdown-item">
+                <input type="checkbox" id="250+" data-price="250 +" value="250 +">
+                <label for="250 +"> 250 +</label>
+              </div>
+              <button type="submit" class="dropdown-submit">Show</button>
+            </form> 
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">
+            <span>Brand</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <rect width="16" height="16" fill="white" style="mix-blend-mode:multiply"/>
+                <path d="M12 6L8 11L4 6H12Z" fill="#2A254B"/>
+            </svg>
+            <ion-icon name="caret-up-outline"></ion-icon>
+          </button>
+          <div class="dropdown-content">
+            <form action="#" id="Brand">
+              <div class="dropdown-item">
+                <input type="checkbox" id="RobertSmith" data-brand="Robert Smith" value="Robert Smith">
+                <label for="Robert Smith"> Robert Smith</label>
+              </div>
+              <div class="dropdown-item">
+                <input type="checkbox" id="LiamGallagher" data-brand="Liam Gallagher" value="Liam Gallagher">
+                <label for="Liam Gallagher"> Liam Gallagher</label>
+              </div>
+              <div class="dropdown-item">
+                <input type="checkbox" id="BiggieSmalls" data-brand="Biggie Smalls" value="Biggie Smalls">
+                <label for="Biggie Smalls"> Biggie Smalls</label>
+              </div>
+              <div class="dropdown-item">
+                <input type="checkbox" id="ThomYorke" data-brand="Thom Yorke" value="Thom Yorke">
+                <label for="Thom Yorke"> Thom Yorke</label>
+              </div>
+              <button type="submit" class="dropdown-submit">Show</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      
+      
+      <div class="sorting-container dis-flex">
+          <span>Sorting by:</span>
+          <div class="dropdown">
+            <button class="dropbtn">
+              <span data-sorting="Date added">Date added</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <rect width="16" height="16" fill="white" style="mix-blend-mode:multiply"/>
+                  <path d="M12 6L8 11L4 6H12Z" fill="#2A254B"/>
+              </svg>
+              <ion-icon name="caret-up-outline"></ion-icon>
+            </button>
+            <div class="dropdown-content" id="sorting">
+              <div class="dropdown-item">Date added</div>
+              <div class="dropdown-item">New arrivals</div>
+              <div class="dropdown-item">Best sellers</div>
+              <div class="dropdown-item"> Recently viewed</div>
+              <div class="dropdown-item">Popular this week</div>
+              <div class="dropdown-item">All products</div>
+            </div>
+          </div>
+      </div>
+    </div>
 
-
+    <section class="products-listing-block all-products-page">
+      <div class="products-listing-container d-flex" id="products-listing-container">
+        <div class="product-item" data-category="Chairs">
+          <div class="product-photo">
+            <img src="img/Chair.png" alt="The Dandy chair">
+          </div>
+          <div class="product-name" id="product-name">The Dandy chair</div>
+          <div class="product-price" id="product-price">£250</div>
+        </div>
+        <div class="product-item" data-category="Plant-pots">
+          <div class="product-photo">
+            <img src="img/VaseSet.png" alt="Rustic Vase Set">
+          </div>
+          <div class="product-name" id="product-name">Rustic Vase Set</div>
+          <div class="product-price" id="product-price">£100</div>
+        </div>
+        <div class="product-item" data-category="Plant-pots">
+          <div class="product-photo">
+            <img src="img/VaseSingle.png" alt="The Silky Vase">
+          </div>
+          <div class="product-name" id="product-name">The Silky Vase</div>
+          <div class="product-price" id="product-price">£75</div>
+        </div>
+        <div class="product-item" data-producttype="Light-fittings">
+          <div class="product-photo">
+            <img src="img/Lamp.png" alt="The Lucy Lamp">
+          </div>
+          <div class="product-name" id="product-name">The Lucy Lamp</div>
+          <div class="product-price" id="product-price">£150</div>
+        </div>
+        <div class="product-item" data-category="Plant-pots">
+          <div class="product-photo">
+            <img src="img/white-vase.png" alt="The white vase">
+          </div>
+          <div class="product-name" id="product-name">The white vase</div>
+          <div class="product-price" id="product-price">£75</div>
+        </div>
+        <div class="product-item" data-category="Chairs">
+          <div class="product-photo">
+            <img src="img/wood-taburetka.png" alt="The wood taburetka">
+          </div>
+          <div class="product-name" id="product-name">The wood taburetka</div>
+          <div class="product-price" id="product-price">£80</div>
+        </div>
+        <div class="product-item" data-category="Plant-pots">
+          <div class="product-photo">
+            <img src="img/plant.png" alt="The green plant">
+          </div>
+          <div class="product-name" id="product-name">The green plant</div>
+          <div class="product-price" id="product-price">£50</div>
+        </div>
+        <div class="product-item" data-category="Chairs">
+          <div class="product-photo">
+            <img src="img/colorful-chairs.png" alt="The Colorful Chairs">
+          </div>
+          <div class="product-name" id="product-name">The Colorful Chairs</div>
+          <div class="product-price" id="product-price">£250</div>
+        </div>
+        <div class="product-item" data-category="Chairs">
+          <div class="product-photo">
+            <img src="img/black-metal-chair.png" alt="Black metal chair">
+          </div>
+          <div class="product-name" id="product-name">Black metal chair</div>
+          <div class="product-price" id="product-price">£159</div>
+        </div>
+        <div class="product-item" data-producttype="Sofas">
+          <div class="product-photo">
+            <img src="img/grey-sofa.jpg" alt="The grey sofa">
+          </div>
+          <div class="product-name" id="product-name">The grey sofa</div>
+          <div class="product-price" id="product-price">£200</div>
+        </div>
+        <div class="product-item" data-producttype="Light-fittings">
+          <div class="product-photo">
+            <img src="img/golden-vases.png" alt="The golden vases">
+          </div>
+          <div class="product-name" id="product-name">The golden lamps</div>
+          <div class="product-price" id="product-price">£199</div>
+        </div>
+        <div class="product-item" data-category="Chairs">
+          <div class="product-photo">
+            <img src="img/kitchen-table.jpg" alt="The kitchen table">
+          </div>
+          <div class="product-name" id="product-name">The kitchen table</div>
+          <div class="product-price" id="product-price">£350</div>
+        </div>
+        <div class="product-item" data-producttype="Accessories">
+          <div class="product-photo">
+            <img src="img/mirror-and-drawer.jpg" alt="The beauty place">
+          </div>
+          <div class="product-name" id="product-name">The beauty place</div>
+          <div class="product-price" id="product-price">£399</div>
+        </div>
+        <div class="product-item" data-category="Chairs">
+          <div class="product-photo">
+            <img src="img/white-armchair.jpg" alt="The white armchair">
+          </div>
+          <div class="product-name" id="product-name">The white armchair</div>
+          <div class="product-price" id="product-price">£150</div>
+        </div>
+        <div class="product-item" data-category="Chairs">
+          <div class="product-photo">
+            <img src="img/white-cute-armchair.jpg" alt="The soft armchair">
+          </div>
+          <div class="product-name" id="product-name">The white soft armchair</div>
+          <div class="product-price" id="product-price">£299</div>
+        </div>
+        <div class="product-item" data-category="Chairs">
+          <div class="product-photo">
+            <img src="img/wood-chair.png" alt="The wood chair">
+          </div>
+          <div class="product-name" id="product-name">The wood chair</div>
+          <div class="product-price" id="product-price">£199</div>
+        </div>
+        <div class="product-item" data-producttype="Sofas">
+          <div class="product-photo">
+            <img src="img/photo_2023-11-13_22-25-48.jpg" alt="The white sofa">
+          </div>
+          <div class="product-name" id="product-name">The white sofa</div>
+          <div class="product-price" id="product-price">£299</div>
+        </div>
+        <div class="product-item" data-producttype="Sofas">
+          <div class="product-photo">
+            <img src="img/photo_2023-11-13_22-25-52.jpg" alt="The wood chair">
+          </div>
+          <div class="product-name" id="product-name">The wood chair</div>
+          <div class="product-price" id="product-price">£199</div>
+        </div>
+        <div class="product-item" data-producttype="Sofas">
+          <div class="product-photo">
+            <img src="img/photo_2023-11-13_22-25-55.jpg" alt="The wood chair">
+          </div>
+          <div class="product-name" id="product-name">The wood chair</div>
+          <div class="product-price" id="product-price">£199</div>
+        </div>
+        <div class="product-item" data-producttype="Sofas">
+          <div class="product-photo">
+            <img src="img/photo_2023-11-13_22-25-58.jpg" alt="The wood chair">
+          </div>
+          <div class="product-name" id="product-name">The wood chair</div>
+          <div class="product-price" id="product-price">£199</div>
+        </div>
+        <div class="product-item" data-producttype="Sofas">
+          <div class="product-photo">
+            <img src="img/photo_2023-11-13_22-26-02.jpg" alt="The wood chair">
+          </div>
+          <div class="product-name" id="product-name">The wood chair</div>
+          <div class="product-price" id="product-price">£199</div>
+        </div>
+        <div class="product-item" data-producttype="Sofas">
+          <div class="product-photo">
+            <img src="img/photo_2023-11-13_22-26-06.jpg" alt="The wood chair">
+          </div>
+          <div class="product-name" id="product-name">The wood chair</div>
+          <div class="product-price" id="product-price">£199</div>
+        </div>
+        <div class="product-item" data-producttype="Sofas">
+          <div class="product-photo">
+            <img src="img/photo_2023-11-13_22-26-15.jpg" alt="The wood chair">
+          </div>
+          <div class="product-name" id="product-name">The wood chair</div>
+          <div class="product-price" id="product-price">£199</div>
+        </div>
+        <div class="product-item" data-producttype="Sofas">
+          <div class="product-photo">
+            <img src="img/photo_2023-11-13_22-26-19.jpg" alt="The wood chair">
+          </div>
+          <div class="product-name" id="product-name">The wood chair</div>
+          <div class="product-price" id="product-price">£199</div>
+        </div>
+        <div class="product-item" data-producttype="Sofas">
+          <div class="product-photo">
+            <img src="img/photo_2023-11-13_22-26-22.jpg" alt="The wood chair">
+          </div>
+          <div class="product-name" id="product-name">The wood chair</div>
+          <div class="product-price" id="product-price">£199</div>
+        </div>
+        <div class="product-item" data-category="Tables">
+          <div class="product-photo">
+            <img src="img/photo_2023-11-13_22-26-26.jpg" alt="The wood chair">
+          </div>
+          <div class="product-name" id="product-name">The wood chair</div>
+          <div class="product-price" id="product-price">£199</div>
+        </div>
+        <div class="product-item" data-category="Tables">
+          <div class="product-photo">
+            <img src="img/photo_2023-11-13_22-26-29.jpg" alt="The wood chair">
+          </div>
+          <div class="product-name" id="product-name">The wood chair</div>
+          <div class="product-price" id="product-price">£199</div>
+        </div>
+        <div class="product-item" data-category="Tables">
+          <div class="product-photo">
+            <img src="img/photo_2023-11-13_22-26-32.jpg" alt="The wood chair">
+          </div>
+          <div class="product-name" id="product-name">The wood chair</div>
+          <div class="product-price" id="product-price">£199</div>
+        </div>
+        <div class="product-item" data-category="Tables">
+          <div class="product-photo">
+            <img src="img/photo_2023-11-13_22-26-35.jpg" alt="The wood chair">
+          </div>
+          <div class="product-name" id="product-name">The wood chair</div>
+          <div class="product-price" id="product-price">£199</div>
+        </div>
+        <div class="product-item" data-category="Tables">
+          <div class="product-photo">
+            <img src="img/photo_2023-11-13_22-26-39.jpg" alt="The wood chair">
+          </div>
+          <div class="product-name" id="product-name">The wood chair</div>
+          <div class="product-price" id="product-price">£199</div>
+        </div>
+        <div class="product-item" data-category="Cutlery">
+          <div class="product-photo">
+            <img src="img/photo_2023-11-13_22-26-42.jpg" alt="The wood chair">
+          </div>
+          <div class="product-name" id="product-name">The wood chair</div>
+          <div class="product-price" id="product-price">£199</div>
+        </div>
+        <div class="product-item" data-category="Cutlery">
+          <div class="product-photo">
+            <img src="img/photo_2023-11-13_22-26-54.jpg" alt="The wood chair">
+          </div>
+          <div class="product-name" id="product-name">The wood chair</div>
+          <div class="product-price" id="product-price">£199</div>
+        </div>
+        <div class="product-item" data-category="Cutlery">
+          <div class="product-photo">
+            <img src="img/photo_2023-11-13_22-26-57.jpg" alt="The wood chair">
+          </div>
+          <div class="product-name" id="product-name">The wood chair</div>
+          <div class="product-price" id="product-price">£199</div>
+        </div>
+        <div class="product-item" data-category="Crockery">
+          <div class="product-photo">
+            <img src="img/photo_2023-11-13_22-26-59.jpg" alt="The wood chair">
+          </div>
+          <div class="product-name" id="product-name">The wood chair</div>
+          <div class="product-price" id="product-price">£199</div>
+        </div>
+        <div class="product-item" data-category="Crockery">
+          <div class="product-photo">
+            <img src="img/photo_2023-11-13_22-27-03.jpg" alt="The wood chair">
+          </div>
+          <div class="product-name" id="product-name">The wood chair</div>
+          <div class="product-price" id="product-price">£199</div>
+        </div>
+        <div class="product-item" data-category="Crockery">
+          <div class="product-photo">
+            <img src="img/photo_2023-11-13_22-27-06.jpg" alt="The wood chair">
+          </div>
+          <div class="product-name" id="product-name">The wood chair</div>
+          <div class="product-price" id="product-price">£199</div>
+        </div>
+        <div class="product-item" data-category="Ceramics">
+          <div class="product-photo">
+            <img src="img/ceramics1.jfif" alt="The wood chair">
+          </div>
+          <div class="product-name" id="product-name">The wood chair</div>
+          <div class="product-price" id="product-price">£199</div>
+        </div>
+        <div class="product-item" data-category="Ceramics">
+          <div class="product-photo">
+            <img src="img/ceramics2.jfif" alt="The wood chair">
+          </div>
+          <div class="product-name" id="product-name">The wood chair</div>
+          <div class="product-price" id="product-price">£199</div>
+        </div>
+        <div class="product-item" data-category="Ceramics">
+          <div class="product-photo">
+            <img src="img/ceramics3.jfif" alt="The wood chair">
+          </div>
+          <div class="product-name" id="product-name">The wood chair</div>
+          <div class="product-price" id="product-price">£199</div>
+        </div>
+        <div class="product-item" data-category="Ceramics">
+          <div class="product-photo">
+            <img src="img/ceramics4.jfif" alt="The wood chair">
+          </div>
+          <div class="product-name" id="product-name">The wood chair</div>
+          <div class="product-price" id="product-price">£199</div>
+        </div>
+        <div class="product-item" data-category="Ceramics">
+          <div class="product-photo">
+            <img src="img/ceramics5.jfif" alt="The wood chair">
+          </div>
+          <div class="product-name" id="product-name">The wood chair</div>
+          <div class="product-price" id="product-price">£199</div>
+        </div>
+        <div class="product-item" data-category="Ceramics">
+          <div class="product-photo">
+            <img src="img/ceramics6.jfif" alt="The wood chair">
+          </div>
+          <div class="product-name" id="product-name">The wood chair</div>
+          <div class="product-price" id="product-price">£199</div>
+        </div>
+        <div class="product-item" data-category="Tableware">
+          <div class="product-photo">
+            <img src="img/tableware1.jfif" alt="The wood chair">
+          </div>
+          <div class="product-name" id="product-name">The wood chair</div>
+          <div class="product-price" id="product-price">£199</div>
+        </div>
+        <div class="product-item" data-category="Tableware">
+          <div class="product-photo">
+            <img src="img/tableware2.jfif" alt="The wood chair">
+          </div>
+          <div class="product-name" id="product-name">The wood chair</div>
+          <div class="product-price" id="product-price">£199</div>
+        </div>
+        <div class="product-item" data-category="Tableware">
+          <div class="product-photo">
+            <img src="img/tableware3.jfif" alt="The wood chair">
+          </div>
+          <div class="product-name" id="product-name">The wood chair</div>
+          <div class="product-price" id="product-price">£199</div>
+        </div>
+        <div class="product-item" data-category="Tableware">
+          <div class="product-photo">
+            <img src="img/tableware4.jfif" alt="The wood chair">
+          </div>
+          <div class="product-name" id="product-name">The wood chair</div>
+          <div class="product-price" id="product-price">£199</div>
+        </div>
+      </div>
+      <div class="btn-content d-flex">
+        <button class="view-collection-btn" id="load-more-btn"><a href="#">Load more</a></button>
+      </div>
+    </section>
     <footer>
       <div class="top-footer-content d-flex">
         <div class="footer-list">
@@ -89,11 +603,11 @@
         <div class="footer-list">
           <ul class="d-flex">
             <li class="footer-list-heading">Our company</li>
-            <li class="footer-list-item"><a href="#">About us</a></li>
-            <li class="footer-list-item"><a href="#">Vacancies</a></li>
-            <li class="footer-list-item"><a href="#">Contact us</a></li>
-            <li class="footer-list-item"><a href="#">Privacy</a></li>
-            <li class="footer-list-item"><a href="#">Returns policy</a></li>
+            <li class="footer-list-item"><a href="/avion/about-us.html">About us</a></li>
+            <li class="footer-list-item"><a href="/avion/blog.html#vacancies">Vacancies</a></li>
+            <li class="footer-list-item"><a href="/avion/contact.html">Contact us</a></li>
+            <li class="footer-list-item"><a href="/avion/blog.html#privacy">Privacy</a></li>
+            <li class="footer-list-item"><a href="/avion/blog.html#returns-policy">Returns policy</a></li>
           </ul>
         </div>
         <div class="sign-up-footer-container">
@@ -162,7 +676,7 @@
         </div>
       </div>
     </footer>
-    <script type="module" src="/main.js"></script>
+    <script type="module" src="/product-list.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   </body>

@@ -35,3 +35,9 @@ menuBtn.addEventListener('click', () =>{
     menuBtn.innerHTML = '<ion-icon name="close-outline" class="close-nav"></ion-icon>'
   }
 })
+
+let closePopup = document.getElementById('close-pop-up__btn');
+let popup = document.querySelector('.pop-up')
+closePopup.addEventListener('click', () => {
+    popup.style.display = 'none';
+})
