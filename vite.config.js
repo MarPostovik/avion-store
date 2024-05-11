@@ -32,7 +32,8 @@ export default defineConfig({
         contact: resolve(__dirname, 'contact.html'),
         blog: resolve(__dirname, 'blog.html'),
         profile: resolve(__dirname, 'profile.html')
-      }
+      },
+      external: ['@popperjs/core'],
     }
   }
 })
