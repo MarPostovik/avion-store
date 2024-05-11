@@ -30,7 +30,8 @@ export default defineConfig({
         aboutUs: resolve(__dirname, 'about-us.html'),
         cart: resolve(__dirname, 'cart.html'),
         contact: resolve(__dirname, 'contact.html'),
-        blog: resolve(__dirname, 'blog.html')
+        blog: resolve(__dirname, 'blog.html'),
+        profile: resolve(__dirname, 'profile.html')
       }
     }
   }
