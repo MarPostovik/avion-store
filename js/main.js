@@ -1,4 +1,3 @@
-import $ from 'jquery';
 
 // Bootstrap
 import 'bootstrap';
