@@ -1,13 +1,13 @@
-import $, { contains } from 'jquery';
+import $, { contains } from '/jquery';
 
 // Bootstrap
-import 'bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import '/bootstrap';
+import '/bootstrap/dist/css/bootstrap.min.css';
 
 import '../styles/style.css'
 import '../styles/responsive.css'
 
-import 'animate.css';
+import '/animate.css';
 
 let menuBtn = document.getElementById('gamburger-menu-icon');
 let bottomMenuLine = document.querySelector('.bottom-line-nav');

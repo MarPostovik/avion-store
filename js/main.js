@@ -1,12 +1,12 @@
 
 // Bootstrap
-import 'bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import '/bootstrap';
+import '/bootstrap/dist/css/bootstrap.min.css';
 
 import '../styles/style.css'
 import '../styles/responsive.css'
 
-import 'animate.css';
+import '/animate.css';
 
 
 let menuBtn = document.getElementById('gamburger-menu-icon');
